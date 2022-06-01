@@ -5,7 +5,6 @@ import Head from "../share/bones/components/Head";
 import tw from "twin.macro";
 import In1 from "../app/bones/containers/In1";
 import In2 from "../app/bones/containers/In2";
-import Card1 from "../app/bones/components/Card1";
 
 export default function Home() {
   return (

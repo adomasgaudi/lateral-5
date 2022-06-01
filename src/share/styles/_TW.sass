@@ -19,12 +19,20 @@
     @extend .cap !optional
     @apply font-[900] text-gray-800
 
+  .h_3
+    @apply text-2xl font-[900] mb-5 mt-20
   // mid reading text
   .p
     @apply text-base md:text-lg lg:leading-[160%] font-[400]
 
+  .p_sm
+    @apply text-sm md:text-sm font-[500] lg:leading-[160%]
+
   .p_xl
     @apply text-base md:text-lg lg:text-xl lg:leading-[160%] font-[400] text-[#445577]
+
+  .p_tag
+    @apply text-base md:text-base lg:text-lg font-[600] text-blue-600 lg:leading-[160%]
 
   // button fonts
   .p_btn_1
@@ -39,3 +47,11 @@
 
   .mb_3
     @apply mb-3 md:mb-6 lg:mb-8
+
+@layer base
+  .container
+    width: 100%
+
+  @media (min-width: 425px)
+    .container
+      max-width: 425px

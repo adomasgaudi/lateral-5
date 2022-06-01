@@ -5,9 +5,11 @@ import { ContainX } from "../../../share/bones/components/Contain";
 import Image from "next/image";
 import { im } from "../../../static/img";
 import random from "../../../static/img/random1.jpg";
-import In2Card from "../components/InCard";
-import { Div } from "../../../share/bones/components/Fifty";
+import { Div } from "../../../share/bones/components/Div";
 import { useSquare } from "../../../share/utils/tools/useSquare";
+import { Card } from "../../../share/bones/components/Card";
+import { Link } from "../layout/Header.styles";
+import NegMargin from "../../../share/bones/components/Margin";
 
 type Props = {};
 
@@ -31,27 +33,32 @@ const In2: FC<Props> = () => {
       </ContainX.H0p3>
 
       <ContainX.H0p3 classIn="items-center" classOut="bg-blue-200 ">
-        <Div.S
-          size="50"
-          className="flex border mr-5 overflow-hidden rounded-xl min-h-[250px] bg-white shadow-trello-2"
-        >
-          <Div.S size="30">
-            <img src={random.src} alt="d" className="h-full object-cover " />
-          </Div.S>
-          <Div.S size="70" className="p-3">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam, eligendi?
+        <Div.S size="50" className="">
+          <Card.W3_7img
+            img={im.random1.src}
+            classIn="p-3 flex flex-col gap-3 items-start"
+          >
+            <h2 className="h_2">Diet</h2>
+            <p className="p_sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              nemo ut quisquam temporibus nostrum ex obcaecati distinctio{" "}
             </p>
-          </Div.S>
+            <Link href="/bloglist">
+              <div className="shadowHov-thick rounded-md py-1 px-3 font-btn-1">
+                READ
+              </div>
+            </Link>
+          </Card.W3_7img>
         </Div.S>
         <Div.S size="50" className="h-full ">
-          <img
-            id="square"
-            src={im.random2.src}
-            alt="d"
-            className="rounded-xl -my-20 object-cover "
-          />
+          <NegMargin>
+            <img
+              id="square"
+              src={im.random2.src}
+              alt="d"
+              className="rounded-xl object-cover "
+            />
+          </NegMargin>
         </Div.S>
       </ContainX.H0p3>
     </>

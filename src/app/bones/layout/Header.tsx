@@ -12,7 +12,7 @@ const Header: FC<Props> = () => {
     <>
       <header className="fixed bg-[#fafafa] w-full z-10 shadow-trello-1 mb-20">
         <div tw="flex justify-between items-center py-1 px-3">
-          <div tw="flex items-center gap-20">
+          <div tw="flex items-center gap-[20%]">
             <Link href="/">
               <div tw="flex items-center">
                 <Logo />
@@ -20,8 +20,6 @@ const Header: FC<Props> = () => {
               </div>
             </Link>
             <NavLink href="/">HOME</NavLink>
-            <NavLink href="/blogs/diet">DIET</NavLink>
-            <NavLink href="/test">TEST</NavLink>
             <NavLink href="/bloglist">BLOGS</NavLink>
           </div>
           <button

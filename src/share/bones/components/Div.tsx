@@ -19,8 +19,12 @@ const L = base(FiftyFiftyLeft, {
 });
 
 const S = styled.div<any>(({ size }) => [
-  `width: ${size}%;`,
-  `${tw`w-full justify-center items-center`}`,
+  `
+  width: 100%;
+  @media (min-width: 768px) {
+    width: ${size}%;
+  }
+  `,
 ]);
 
 export const Div = {

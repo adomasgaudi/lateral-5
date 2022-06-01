@@ -33,11 +33,18 @@ export const H800p3 = base(Contain, {
 
 export const H0p3 = base(Contain, {
   classOut: "",
-  pad: "px-2 md:px-[3%]",
+  pad: "px-2 md:px-[%]",
   classIn: " flex ",
+});
+
+export const Brilliant = base(Contain, {
+  classOut: "",
+  pad: "px-2 sm:px-[15%] md:px-[20%] lg:px-[22%] xl:px-[24%]",
+  classIn: " flex flex-wrap ",
 });
 
 export const ContainX = {
   H800p3,
   H0p3,
+  Brilliant,
 };
