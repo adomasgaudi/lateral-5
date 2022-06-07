@@ -42,6 +42,19 @@ const BlogList = () => {
             </p>
           </Card.W3_7img>
         </Link>
+        <Link href="blogs/health/exercise_habits/3" cls="mb-5">
+          <Card.W3_7img
+            img={im.skHabitActions.src}
+            classIn="p-3 flex flex-col gap-3 items-start"
+          >
+            <h3 className="md:h_3 md:mt-0">Exercise schma</h3>
+            <p className="sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              blanditiis nobis sit placeat ratione hic molestias totam, corporis
+              illo quia.
+            </p>
+          </Card.W3_7img>
+        </Link>
       </ContainX.Brilliant>
       <Footer />
     </>

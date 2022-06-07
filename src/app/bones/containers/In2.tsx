@@ -6,10 +6,10 @@ import Image from "next/image";
 import { im } from "../../../static/img";
 import random from "../../../static/img/random1.jpg";
 import { Div } from "../../../share/bones/components/Div";
-import { useSquare } from "../../../share/utils/tools/useSquare";
 import { Card } from "../../../share/bones/components/Card";
 import { Link } from "../layout/Header.styles";
 import NegMargin from "../../../share/bones/components/Margin";
+import { useSquare } from "../../../share/utils/tools/useTools";
 
 type Props = {};
 
@@ -44,7 +44,7 @@ const In2: FC<Props> = () => {
               nemo ut quisquam temporibus nostrum ex obcaecati distinctio{" "}
             </p>
             <Link href="/bloglist">
-              <div className="shadowHov-thick rounded-md py-1 px-3 font-btn-1">
+              <div className="shadowHov_thick rounded-md py-1 px-3 font_btn_1">
                 READ
               </div>
             </Link>

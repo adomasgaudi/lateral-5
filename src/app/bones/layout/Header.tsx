@@ -10,7 +10,7 @@ const Header: FC<Props> = () => {
   const [loggedIn, setLoggedIn] = useState<boolean>(true);
   return (
     <>
-      <header className="fixed bg-[#fafafa] w-full z-10 shadow-trello-1 mb-20">
+      <header className="bg-white w-full z-10 mb-20">
         <div tw="flex justify-between items-center py-1 px-3">
           <div tw="flex items-center gap-[20%]">
             <Link href="/">
@@ -24,14 +24,13 @@ const Header: FC<Props> = () => {
           </div>
           <button
             type="button"
-            className="shadowHov-thick rounded-md py-1 px-3 font-btn-1"
+            className="shadowHov_thick rounded-md py-1 px-3 font_btn_1"
             onClick={handleLogout}
           >
             {loggedIn ? "Log Out" : "Log In"}
           </button>
         </div>
       </header>
-      <div tw="w-full h-32 " />
     </>
   );
 };

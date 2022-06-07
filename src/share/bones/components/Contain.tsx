@@ -40,7 +40,7 @@ export const H0p3 = base(Contain, {
 export const Brilliant = base(Contain, {
   classOut: "",
   pad: "px-2 sm:px-[15%] md:px-[20%] lg:px-[22%] xl:px-[24%]",
-  classIn: " flex flex-wrap ",
+  classIn: "  ",
 });
 
 export const ContainX = {

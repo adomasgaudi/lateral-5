@@ -3,8 +3,10 @@ import "../app/styles/Local.css";
 import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
-import { useOutline } from "../share/utils/tools/useOutline";
+import { useOutline } from "../share/utils/tools/useTools";
 import { GlobalStyles, themeFn } from "../share/styles/Themeconfig";
+import { Provider } from "react-redux";
+import { store } from "../share/utils/state/store";
 
 declare module "react" {
   interface Attributes {
@@ -17,8 +19,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={themeFn(1, 1)}>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </Provider>
     </ThemeProvider>
   );
 }

@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import tw from "twin.macro";
+import "twin.macro";
+import Par from "../../../../app/bones/components/Par";
 import Footer from "../../../../app/bones/layout/Footer";
 import Header from "../../../../app/bones/layout/Header";
 import { ContainX } from "../../../../share/bones/components/Contain";
@@ -11,16 +12,18 @@ const Diet2: FC<Props> = () => (
   <>
     <Head title="Analysis Paralysis" />
     <Header />
-    <ContainX.Brilliant classIn="aniamte fadeInUp">
+    <ContainX.Brilliant classIn="fadeInUp">
       <p className="p_tag">Lvl 1</p>
       <h1 className="h_2 mb-5">
         Why you should become a bodybuilder for a year
       </h1>
 
       <h3 className="h_3 mb-5">{`You won't get muscular yet.`}</h3>
-      <p className="p">{`You might think that it's not what you want, but just entertain this
+      <Par>
+        {`You might think that it's not what you want, but just entertain this
         idea for a second. First of all, basically no one becomes super bulk in
-        a year, it takes years, plural. `}</p>
+        a year, it takes years, plural. `}
+      </Par>
       <br />
       <p className="p">
         {`Bulking for a year is not gonna make you

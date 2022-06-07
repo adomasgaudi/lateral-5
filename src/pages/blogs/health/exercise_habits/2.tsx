@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import tw from "twin.macro";
+import "twin.macro";
 import Footer from "../../../../app/bones/layout/Footer";
 import Header from "../../../../app/bones/layout/Header";
 import { Link } from "../../../../app/bones/layout/Header.styles";

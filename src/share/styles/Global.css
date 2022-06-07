@@ -67,9 +67,16 @@ body .text-g6 {
 }
 
 /*=== Trigger  ===*/
-.animate, .fadeInUp {
+.animate100, .fadeInUp {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animate15, .fadeInUp15 {
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -111,6 +118,11 @@ body .text-g6 {
           animation-name: fadeInUp;
 }
 
+.fadeInUp15 {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
 .shadow_1 {
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -126,19 +138,51 @@ body .text-g6 {
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.shadow_trello-1, .shadowHov_trello {
+.shadow_trello_1, .shadowHov_trello {
   -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
           box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
-.shadow_trello-2, .shadowHov_trello:hover {
+.shadow_trello_2, .shadowHov_trello:hover {
   -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.shadow_ionic {
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .glow_blue, .btn_glow {
   -webkit-box-shadow: 0 20px 20px -17px rgba(0, 111, 255, 0.53);
           box-shadow: 0 20px 20px -17px rgba(0, 111, 255, 0.53);
+}
+
+.glow_side {
+  -webkit-box-shadow: 5px 0px 5px -5px #f47460;
+          box-shadow: 5px 0px 5px -5px #f47460;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.glow_side:hover {
+  -webkit-box-shadow: 15px 0px 8px -10px #f3705b;
+          box-shadow: 15px 0px 8px -10px #f3705b;
+}
+
+.text_grad_3 {
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #939eae, #c7c9cc);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-color: #b8c6db;
 }
 
 @tailwind base {}@tailwind components {}@tailwind utilities {}@layer base {

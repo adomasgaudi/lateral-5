@@ -22,6 +22,8 @@ import thief2 from './img/thief2.png'
 import thieflogo from './img/thieflogo.png'
 import triangle from './img/triangle.png'
 import wall from './img/wall.png'
+import skHabitActions from './img/sk-habit-actions.jpg'
+import skHabitCycle from './img/sk-habit-cycle.jpg'
 
 
 const im = {
@@ -40,6 +42,8 @@ const im = {
   random3,
   // sk,
   // sk,
+  skHabitActions,
+  skHabitCycle,
   sk_rep1,
   sketch1,
   sketch2,

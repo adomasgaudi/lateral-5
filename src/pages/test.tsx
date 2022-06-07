@@ -12,9 +12,8 @@ const PP = ({ children }) => (
 const Text = styled.h1`
   color: yellowgreen;
 `;
-const PropsStyle = styled.input<any>(({ hasBorder }) => [
-  `color: black;`,
-  hasBorder && tw`border-purple-500`,
+const PropsStyle = styled.div<any>(({ hasBorder }) => [
+  `color: ${hasBorder ? `blue` : `red`};`,
 ]);
 
 const Text2 = styled.h1`
@@ -44,6 +43,7 @@ export default function Home() {
           <p className="redd">pure css</p>
           <p className="text-blue-300">tailwind</p>
           <p tw="text-purple-800">twin</p>
+          <PropsStyle hasBorder={false}>props</PropsStyle>
           <p>TWIN TWIN</p>
           <Text>styled</Text>
           <Text2>styled theme text 2</Text2>
