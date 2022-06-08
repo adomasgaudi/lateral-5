@@ -51,6 +51,11 @@ a {
   color: #de365e;
 }
 
+.trans {
+  -webkit-transform: 1s;
+          transform: 1s;
+}
+
 body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -159,15 +164,13 @@ body .text-g6 {
 }
 
 .glow_side {
-  -webkit-box-shadow: 5px 0px 5px -5px #f47460;
-          box-shadow: 5px 0px 5px -5px #f47460;
   -webkit-transition: .15s;
   transition: .15s;
 }
 
 .glow_side:hover {
-  -webkit-box-shadow: 15px 0px 8px -10px #f3705b;
-          box-shadow: 15px 0px 8px -10px #f3705b;
+  -webkit-box-shadow: 5px 0px 5px -5px #f47460;
+          box-shadow: 5px 0px 5px -5px #f47460;
 }
 
 .text_grad_3 {
@@ -190,7 +193,10 @@ body .text-g6 {
     @apply font-[800] text-3xl md:text-4xl lg:text-[64px] lg:leading-[1] {}
   }
   .h_2 {
-    @apply font-[800] text-2xl md:text-3xl lg:text-4xl lg:leading-[1] {}
+    @apply font-[700] text-3xl md:text-4xl lg:text-4xl lg:leading-[1] {}
+  }
+  .h_3, .h_3m {
+    @apply font-[900] text-xl md:text-2xl lg:leading-[1] {}
   }
   .cap, .cap_thin, .cap_thick {
     @apply text-[14px] tracking-[.2em] {}
@@ -200,9 +206,6 @@ body .text-g6 {
   }
   .cap_thick {
     @apply font-[900] text-gray-800 {}
-  }
-  .h_3 {
-    @apply text-2xl font-[900] mb-5 mt-20 {}
   }
   .p {
     @apply text-base md:text-lg lg:leading-[160%] font-[400] {}
@@ -269,5 +272,8 @@ body .text-g6 {
     -webkit-transition: .1s;
     transition: .1s;
     @apply scale-105 {}
+  }
+  .h_3m {
+    @apply mt-20 mb-5 {}
   }
 }

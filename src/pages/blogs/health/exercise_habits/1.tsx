@@ -1,44 +1,59 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import "twin.macro";
-import Par from "../../../../app/bones/components/Par";
+import { BlurW, InBlur } from "../../../../app/bones/components/Blur";
 import Footer from "../../../../app/bones/layout/Footer";
 import Header from "../../../../app/bones/layout/Header";
+import HeaderFixed from "../../../../app/bones/layout/HeaderFixed";
 import { ContainX } from "../../../../share/bones/components/Contain";
 import Head from "../../../../share/bones/components/Head";
+import { sec1p1 } from "./1.texts";
 
 type Props = {};
 
-const Diet2: FC<Props> = () => (
-  <>
-    <Head title="Analysis Paralysis" />
-    <Header />
-    <ContainX.Brilliant classIn="fadeInUp">
-      <p className="p_tag">Lvl 1</p>
-      <h1 className="h_2 mb-5">
-        Why you should become a bodybuilder for a year
-      </h1>
+const drop = <>text2</>;
+const Diet2: FC<Props> = () => {
+  const [position, setPosition] = useState<boolean>(false);
+  const goHandle = () => {
+    setPosition((prev) => !prev);
+  };
 
-      <h3 className="h_3 mb-5">{`You won't get muscular yet.`}</h3>
-      <Par>
-        {`You might think that it's not what you want, but just entertain this
-        idea for a second. First of all, basically no one becomes super bulk in
-        a year, it takes years, plural. `}
-      </Par>
-      <br />
-      <p className="p">
-        {`Bulking for a year is not gonna make you
-        worse of whatever your goals are. And I sincerely mean that for women as
-        well, being a guy. Given that, let's see what exactly would be the
-        benefit of bodybuilding for a year. The biggest obsticle to any king of
-        exercising is simply doing it.`}
-      </p>
-      <h3 className="h_3 mb-5">{`Habit forming is the most important factor`}</h3>
-      <p className="p">
-        {`Doing it consistently and creating a habit out of it. Quite possibly the
-        most important issue of exercising in my opinion is not adressed enough.
-        So let me give you some pointers. It seems quite common to find young
+  return (
+    <>
+      <Head title="Analysis Paralysis" />
+      <HeaderFixed />
+      <Header />
+      <ContainX.Brilliant classIn="fadeInUp">
+        <p
+          className="p_tag hover:border-b-blue-500 hover:border-b"
+          onClick={goHandle}
+        >
+          Lvl 1 UP!
+        </p>
+        <h1 className="h_2 mb-5">
+          Why you should become a bodybuilder for a year
+        </h1>
+
+        <h3 className="h_3m ">{`You won't get muscular yet.`}</h3>
+        <BlurW classBlur="" click={position}>
+          <p className="p">
+            {`You might think that its not what you want, but just entertain
+              this idea for a second. First of all, basically no one becomes
+              super bulk in a year, it takes years, plural. So, let's see what exactly would be the benefit of bodybuilding for a year.`}
+          </p>
+          <InBlur>{sec1p1}</InBlur>
+        </BlurW>
+        <h3 className="h_3m">{`Training consistently`}</h3>
+        <BlurW click={position}>
+          <>
+            <p className="p">{`Let's address probably the most important issue in exercising, namely how to do it consistently.`}</p>
+            <p className="p">{`To see how we could attain this elusive goal, let's take a look at a working example.`}</p>
+            <p className="p">{`It seems quite common to find young
         guys that just can't stop going to the gym and they keep talking about
-        how they feel addicted to the "burn". Now, "generic musclehead" and
+        how they feel addicted to the "burn".`}</p>
+          </>
+        </BlurW>
+        <p className="p">
+          {`Doing it consistently and creating a habit out of it. in my opinion is not adressed enough. So let me give you some pointers.  Now, "generic musclehead" and
         "discipline" do not associate in my head that well, so I think it's
         worth considering this as an example that that has the specific
         environment to successfully habituate this unhabituable task. Reasons
@@ -70,60 +85,11 @@ const Diet2: FC<Props> = () => (
         exercise and they know their competition. Thats to very powerfull
         psychological tools right there. Social comparison/pressure and logging
         experience and improvements.`}
-      </p>
-      <br />
-      <br />
-      <p className="p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus
-        explicabo sint perferendis quia, non tenetur modi, cumque dolorum
-        laudantium fugit! Sit nam beatae delectus. Nam, quaerat repellat! Veniam
-        dolore incidunt maiores! Quod incidunt officia, dolore neque omnis
-        reprehenderit autem fuga in eum nam expedita. Nam veniam odio aliquid,
-        suscipit?
-      </p>
-      <br />
-      <br />
-      <p className="p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus
-        explicabo sint perferendis quia, non tenetur modi, cumque dolorum
-        laudantium fugit! Sit nam beatae delectus. Nam, quaerat repellat! Veniam
-        dolore incidunt maiores! Quod incidunt officia, dolore neque omnis
-        reprehenderit autem fuga in eum nam expedita. Nam veniam odio aliquid,
-        suscipit?
-      </p>
-      <br />
-      <br />
-      <p className="p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus
-        explicabo sint perferendis quia, non tenetur modi, cumque dolorum
-        laudantium fugit! Sit nam beatae delectus. Nam, quaerat repellat! Veniam
-        dolore incidunt maiores! Quod incidunt officia, dolore neque omnis
-        reprehenderit autem fuga in eum nam expedita. Nam veniam odio aliquid,
-        suscipit?
-      </p>
-      <br />
-      <br />
-      <p className="p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus
-        explicabo sint perferendis quia, non tenetur modi, cumque dolorum
-        laudantium fugit! Sit nam beatae delectus. Nam, quaerat repellat! Veniam
-        dolore incidunt maiores! Quod incidunt officia, dolore neque omnis
-        reprehenderit autem fuga in eum nam expedita. Nam veniam odio aliquid,
-        suscipit?
-      </p>
-      <br />
-      <br />
-      <p className="p mb-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus
-        explicabo sint perferendis quia, non tenetur modi, cumque dolorum
-        laudantium fugit! Sit nam beatae delectus. Nam, quaerat repellat! Veniam
-        dolore incidunt maiores! Quod incidunt officia, dolore neque omnis
-        reprehenderit autem fuga in eum nam expedita. Nam veniam odio aliquid,
-        suscipit?
-      </p>
-    </ContainX.Brilliant>
-    <Footer />
-  </>
-);
+        </p>
+      </ContainX.Brilliant>
+      <Footer />
+    </>
+  );
+};
 
 export default Diet2;
