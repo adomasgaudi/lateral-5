@@ -12,7 +12,7 @@ type Props = {
 const Pt1: FC<Props> = ({ position }) => (
   <>
     <h3 className="h_3m">
-      Reasons why bodybuilders create good exercising habits.
+      Reasons why muscle-builders create good exercising habits.
     </h3>
 
     <h3 className="h_4m">
