@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import tw from "twin.macro";
 import { BlurW, InBlur } from "../../../../../app/bones/components/Blur";
 import { audio } from "../../../../../static/audio/webaudio";
-import { texts } from "../Exr1.texts";
+import Consistency from "../Exr1.texts";
 
 type Props = {
   position: any;
@@ -31,7 +31,7 @@ const Pt1: FC<Props> = ({ position }) => (
         <p className="p">{`That is why I think it's
         worth considering this as an example and see what are the circumstances that help them habituate this unhabituable task.`}</p>
       </>
-      {texts.consistency}
+      {Consistency}
     </BlurW>
   </>
 );
