@@ -20,7 +20,7 @@ const Header: FC<Props> = () => {
               </div>
             </Link>
             <NavLink href="/">HOME</NavLink>
-            <NavLink href="/bloglist">BLOGS</NavLink>
+            <NavLink href="/blogs">BLOGS</NavLink>
           </div>
           <button
             type="button"

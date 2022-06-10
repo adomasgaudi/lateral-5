@@ -3,7 +3,7 @@ import "twin.macro";
 import { ContainX } from "../../../share/bones/components/Contain";
 // import { Div50 } from "../../../share/bones/components/Fifty";
 import Image from "next/image";
-import { im } from "../../../static/img";
+import { im } from "../../../static";
 import random from "../../../static/img/random1.jpg";
 import { Div } from "../../../share/bones/components/Div";
 import { Card } from "../../../share/bones/components/Card";

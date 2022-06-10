@@ -42,13 +42,13 @@ a {
 }
 
 *::-moz-selection {
-  background: #2d566f;
-  color: #de365e;
+  background: #de385f9f;
+  color: #2d566f;
 }
 
 *::selection {
-  background: #2d566f;
-  color: #de365e;
+  background: #de385f9f;
+  color: #2d566f;
 }
 
 .trans {
@@ -198,6 +198,9 @@ body .text-g6 {
   .h_3, .h_3m {
     @apply font-[900] text-xl md:text-2xl lg:leading-[1] {}
   }
+  .h_4, .h_4m {
+    @apply font-[700] text-lg md:text-xl lg:leading-[1] text-gray-600 {}
+  }
   .cap, .cap_thin, .cap_thick {
     @apply text-[14px] tracking-[.2em] {}
   }
@@ -208,7 +211,7 @@ body .text-g6 {
     @apply font-[900] text-gray-800 {}
   }
   .p {
-    @apply text-base md:text-lg lg:leading-[160%] font-[400] {}
+    @apply text-base md:text-lg lg:leading-[160%] font-[400] mb-2 {}
   }
   .p_sm {
     @apply text-sm md:text-sm font-[500] lg:leading-[160%] {}
@@ -274,6 +277,9 @@ body .text-g6 {
     @apply scale-105 {}
   }
   .h_3m {
-    @apply mt-20 mb-5 {}
+    @apply mt-28 mb-8 {}
+  }
+  .h_4m {
+    @apply mt-14 mb-5 {}
   }
 }

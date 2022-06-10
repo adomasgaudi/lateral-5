@@ -25,6 +25,10 @@ import wall from './img/wall.png'
 import skHabitActions from './img/sk-habit-actions.jpg'
 import skHabitCycle from './img/sk-habit-cycle.jpg'
 
+//audio
+
+// import audio1 from './audio/OA1.mp3'
+
 
 const im = {
   apple,
@@ -52,7 +56,8 @@ const im = {
   thief2,
   thieflogo,
   triangle,
-  wall
+  wall,
+  // audio1
 }
 
 export { im }
