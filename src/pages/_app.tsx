@@ -1,6 +1,6 @@
+import "tailwindcss/base.css";
 import "../share/styles/Global.css";
 import "../app/styles/Local.css";
-import "tailwindcss/base.css";
 import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
 import { useOutline } from "../share/utils/tools/useTools";

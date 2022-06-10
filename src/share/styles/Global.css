@@ -56,21 +56,6 @@ a {
           transform: 1s;
 }
 
-body {
-  overflow-y: auto;
-  overflow-x: hidden;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-}
-
-body .text-g3 {
-  color: #303540;
-}
-
-body .text-g6 {
-  color: #607080;
-}
-
 /*=== Trigger  ===*/
 .animate100, .fadeInUp {
   -webkit-animation-duration: 1s;
@@ -199,7 +184,7 @@ body .text-g6 {
     @apply font-[900] text-xl md:text-2xl lg:leading-[1] {}
   }
   .h_4, .h_4m {
-    @apply font-[700] text-lg md:text-xl lg:leading-[1] text-gray-600 {}
+    @apply font-[700] text-[22px] md:text-xl lg:leading-[1] text-gray-500 {}
   }
   .cap, .cap_thin, .cap_thick {
     @apply text-[14px] tracking-[.2em] {}
@@ -210,8 +195,8 @@ body .text-g6 {
   .cap_thick {
     @apply font-[900] text-gray-800 {}
   }
-  .p {
-    @apply text-base md:text-lg lg:leading-[160%] font-[400] mb-2 {}
+  .p, .pm {
+    @apply text-[16px] leading-[1.6rem] font-[500] text-[#444] {}
   }
   .p_sm {
     @apply text-sm md:text-sm font-[500] lg:leading-[160%] {}
@@ -280,6 +265,9 @@ body .text-g6 {
     @apply mt-28 mb-8 {}
   }
   .h_4m {
-    @apply mt-14 mb-5 {}
+    @apply mt-14 mb-2 {}
+  }
+  .pm {
+    @apply mb-2 {}
   }
 }

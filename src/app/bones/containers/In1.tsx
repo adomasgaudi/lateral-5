@@ -10,7 +10,7 @@ type Props = {};
 
 const In1: FC<Props> = () => (
   <ContainX.H800p3 classIn="md:flex-row flex-col-reverse">
-    <Div.S size={55} className="">
+    <Div.S size={55} className="px-5">
       <div className="flex flex-col gap-8 items-start aniamte fadeInUp">
         <h1 className="hero ">
           <span className="text_grad_3">Overanalysed.</span>

@@ -23,7 +23,7 @@ const In2: FC<Props> = () => {
           <div className="p font-bold text-blue-500">Tagline</div>
           <h1 className="h_2">Food</h1>
         </div>
-        <p className="p">
+        <p className="pm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
           perferendis voluptatum iure voluptate animi ut asperiores non?
           Perferendis, amet eligendi. Lorem ipsum dolor sit amet consectetur
