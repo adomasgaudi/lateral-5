@@ -1,6 +1,10 @@
 /*=== Trigger  ===*/
-.animate
+.animate100
   animation-duration: 1s
+  animation-fill-mode: both
+
+.animate15
+  animation-duration: .2s
   animation-fill-mode: both
 
 /*=== Optional Delays, change values here  ===*/
@@ -19,5 +23,9 @@
     transform: none
 
 .fadeInUp
-  @extend .animate !optional
+  @extend .animate100 !optional
+  animation-name: fadeInUp
+
+.fadeInUp15
+  @extend .animate15 !optional
   animation-name: fadeInUp

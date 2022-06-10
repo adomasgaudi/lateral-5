@@ -3,7 +3,7 @@ import NextLink from "next/link";
 import tw from "twin.macro";
 import Image from "next/image";
 import { base } from "../../../share/utils/tools/baseHOC";
-import { im } from "../../../static/img";
+import { im } from "../../../static";
 
 export const Link = ({ children, href, cls }: any) => (
   <NextLink href={href}>
