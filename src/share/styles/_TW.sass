@@ -11,17 +11,21 @@
     @apply font-[700] text-3xl md:text-4xl lg:text-4xl lg:leading-[1]
 
   .h_3
-    @apply font-[900] text-xl md:text-2xl lg:leading-[1]
+    @apply font-[900] text-[24px]
+  .h_3
+    @apply lg:text-3xl lg:leading-[1]
 
   .h_4
-    @apply font-[700] text-[22px] md:text-xl lg:leading-[1] text-gray-500
+    @apply font-[700] text-[22px] text-gray-500
+  .h_4
+    @apply lg:text-2xl lg:leading-[1]
 
   // mid - button/anchor
   .cap
     @apply text-[14px] tracking-[.2em]
   .cap_thin
     @extend .cap !optional
-    @apply font-[400] text-gray-500
+    @apply font-[500] text-gray-500
   .cap_thick
     @extend .cap !optional
     @apply font-[900] text-gray-800
@@ -31,6 +35,8 @@
 
   .p
     @apply text-[16px] leading-[1.6rem] font-[500] text-[#444]
+  .p
+    @apply lg:text-[17px] lg:font-[500] lg:leading-[1.8rem]
 
   .p_sm
     @apply text-sm md:text-sm font-[500] lg:leading-[160%]
@@ -39,7 +45,7 @@
     @apply text-base md:text-lg lg:text-xl lg:leading-[160%] font-[400] text-[#445577]
 
   .p_tag
-    @apply text-base md:text-base lg:text-lg font-[600] text-blue-600 lg:leading-[160%]
+    @apply text-base md:text-base lg:text-lg font-[600] text-[#f55c83] lg:leading-[160%]
 
   // button fonts
   .p_btn_1

@@ -18,7 +18,7 @@ const Blur: FC<any> = (props) => {
   };
 
   const Outer = styled.div`
-    ${tw`relative overflow-hidden bg-white`}
+    ${tw`relative overflow-hidden bg-white `}
   `;
 
   const Inner1 = styled.div<any>(({ isVisible }) => [

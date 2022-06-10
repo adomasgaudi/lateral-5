@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import "twin.macro";
 import { BlurW, InBlur } from "../../../../app/bones/components/Blur";
+import FixedBtn from "../../../../app/bones/components/FixedBtn";
 import { Quote } from "../../../../app/bones/components/Quote";
 import Footer from "../../../../app/bones/layout/Footer";
 import Header from "../../../../app/bones/layout/Header";
@@ -28,9 +29,10 @@ const Diet2: FC<Props> = () => {
       <HeaderFixed />
 
       <Header />
+      <FixedBtn />
       <ContainX.Brilliant classIn="fadeInUp">
         <p
-          className="p_tag hover:border-b-blue-500 hover:border-b z-10"
+          className="p_tag hover:border-b-[#eb234e] hover:border-b z-10"
           onClick={goHandle}
         >
           Lvl 1 UP!
@@ -38,27 +40,6 @@ const Diet2: FC<Props> = () => {
         <h1 className="h_2 mb-10">
           Why you should become a bodybuilder for a year
         </h1>
-        <div className="sticky top-[60%] right-0 z-10 flex flex-col items-end">
-          <button
-            className="w-10 h-10 rounded-md border border-gray-300 font-[600] bg-gray-100 hover:bg-gray-200 mb-1 select-none"
-            type="button"
-            onClick={gobruh}
-          >
-            1
-          </button>
-          <button
-            className="w-10 h-10 rounded-md border border-gray-300 font-[600] bg-gray-100 hover:bg-gray-200 mb-1 select-none"
-            type="button"
-          >
-            2
-          </button>
-          <button
-            className="w-10 h-10 rounded-md border border-gray-300 font-[600] bg-gray-100 hover:bg-gray-200 mb-1 select-none"
-            type="button"
-          >
-            3
-          </button>
-        </div>
         <Pt1 position={position} />
         <Pt2 position={position} />
         <Pt3 position={position} />

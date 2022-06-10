@@ -181,22 +181,31 @@ a {
     @apply font-[700] text-3xl md:text-4xl lg:text-4xl lg:leading-[1] {}
   }
   .h_3, .h_3m {
-    @apply font-[900] text-xl md:text-2xl lg:leading-[1] {}
+    @apply font-[900] text-[24px] {}
+  }
+  .h_3, .h_3m {
+    @apply lg:text-3xl lg:leading-[1] {}
   }
   .h_4, .h_4m {
-    @apply font-[700] text-[22px] md:text-xl lg:leading-[1] text-gray-500 {}
+    @apply font-[700] text-[22px] text-gray-500 {}
+  }
+  .h_4, .h_4m {
+    @apply lg:text-2xl lg:leading-[1] {}
   }
   .cap, .cap_thin, .cap_thick {
     @apply text-[14px] tracking-[.2em] {}
   }
   .cap_thin {
-    @apply font-[400] text-gray-500 {}
+    @apply font-[500] text-gray-500 {}
   }
   .cap_thick {
     @apply font-[900] text-gray-800 {}
   }
   .p, .pm {
     @apply text-[16px] leading-[1.6rem] font-[500] text-[#444] {}
+  }
+  .p, .pm {
+    @apply lg:text-[17px] lg:font-[500] lg:leading-[1.8rem] {}
   }
   .p_sm {
     @apply text-sm md:text-sm font-[500] lg:leading-[160%] {}
@@ -205,7 +214,7 @@ a {
     @apply text-base md:text-lg lg:text-xl lg:leading-[160%] font-[400] text-[#445577] {}
   }
   .p_tag {
-    @apply text-base md:text-base lg:text-lg font-[600] text-blue-600 lg:leading-[160%] {}
+    @apply text-base md:text-base lg:text-lg font-[600] text-[#f55c83] lg:leading-[160%] {}
   }
   .p_btn_1 {
     @apply text-sm md:text-base md:font-[600] {}
@@ -234,7 +243,7 @@ a {
 
 @layer base {
   .font_btn_1 {
-    @apply text-sm md:text-base md:font-[600] {}
+    @apply text-sm lg:text-base font-[600] {}
   }
   .btn_1 {
     @apply px-5 py-2 bg-blue-400 text-white rounded-lg {}
@@ -246,28 +255,28 @@ a {
     @apply px-5 py-1 bg-blue-400 text-white font-[600] {}
   }
   .btn_glow {
-    -webkit-box-shadow: -1px 5px 5px -3px #005eff;
-            box-shadow: -1px 5px 5px -3px #005eff;
-    color: #006fff;
+    -webkit-box-shadow: -1px 5px 5px -3px #ff3700;
+            box-shadow: -1px 5px 5px -3px #ff3700;
+    color: #ff0044;
     -webkit-transition: .1s;
     transition: .1s;
     @apply bg-gray-100 rounded-lg {}
   }
   .btn_glow:hover {
-    text-shadow: 0 0 5px rgba(0, 111, 255, 0.5);
-    -webkit-box-shadow: -1px 5px 5px 2px rgba(0, 94, 255, 0.3);
-            box-shadow: -1px 5px 5px 2px rgba(0, 94, 255, 0.3);
+    text-shadow: 0 0 5px rgba(255, 0, 81, 0.5);
+    -webkit-box-shadow: -1px 5px 5px 2px #ff00484d;
+            box-shadow: -1px 5px 5px 2px #ff00484d;
     -webkit-transition: .1s;
     transition: .1s;
     @apply scale-105 {}
   }
   .h_3m {
-    @apply mt-28 mb-8 {}
+    @apply mt-28 mb-[1em] {}
   }
   .h_4m {
-    @apply mt-14 mb-2 {}
+    @apply mt-14 mb-[1em] {}
   }
   .pm {
-    @apply mb-2 {}
+    @apply my-[1em] {}
   }
 }

@@ -19,12 +19,12 @@ const Pt1: FC<Props> = ({ position }) => (
     <h3 className="h_4m">
       Reason one - some muscles are more difficult to train than others
     </h3>
-    <audio controls>
+    {/* <audio controls>
       <source src={audio.reason1} type="audio/mpeg" />
-    </audio>
+    </audio> */}
     <BlurW click={position}>
       <>
-        <p className="pm">
+        <p className="p">
           Although training different muscles seems equally good and is
           indiscriminantly suggested, you might have found that
           <b> some muscles are much more exhausting to train than others.</b>
@@ -43,12 +43,12 @@ const Pt1: FC<Props> = ({ position }) => (
     </BlurW>
 
     <h3 className="h_4m">Reason two - Low rep ranges are easier</h3>
-    <audio controls>
+    {/* <audio controls>
       <source src={audio.reason2} type="audio/mpeg" />
-    </audio>
+    </audio> */}
     <BlurW click={position}>
       <>
-        <p className="pm">{` Training in high rep ranges. Some muscles require
+        <p className="p">{` Training in high rep ranges. Some muscles require
         larger rep ranges. If you're trying to build muscle, then the useful exercise volume would be when you get close to your
         max ability, your max reps, however, depending on the resistance of the
         exercise your maximum amount of reps can vary. Realistically, people commonly choose weights that end up setting their max reps somewhere in the range of 10reps to 50reps.`}</p>
@@ -65,7 +65,7 @@ const Pt1: FC<Props> = ({ position }) => (
     <h3 className="h_4m"> Reason three - diet</h3>
     <BlurW click={position}>
       <>
-        <p className="pm">{`A lot of young guys are desperate to improve their physique. They will most definitely not miss the opportunity to eat 2g/kg of protein per day or even use other more controversial supplements. By doing this they're not only improving
+        <p className="p">{`A lot of young guys are desperate to improve their physique. They will most definitely not miss the opportunity to eat 2g/kg of protein per day or even use other more controversial supplements. By doing this they're not only improving
         their muscle growth, but consequentially, this also rewards them with
         the dopamine to keep going back to the gym.  `}</p>
         <p className="pm">{`Additionally, their diet is
@@ -83,7 +83,7 @@ const Pt1: FC<Props> = ({ position }) => (
     <h3 className="h_4m"> Reason four - healthy social pressure </h3>
     <BlurW click={position}>
       <>
-        <p className="pm">{`Young guys show off frequently. They know their max abilities for each exercise and they know their competition. Those two alone are very powerful psychological tools by themselves. Social comparison together with modeling their self-identity and logging experience and improvements.`}</p>
+        <p className="p">{`Young guys show off frequently. They know their max abilities for each exercise and they know their competition. Those two alone are very powerful psychological tools by themselves. Social comparison together with modeling their self-identity and logging experience and improvements.`}</p>
         <Quote>
           {" "}
           {`"Muscle-builders" know the numbers of their abilities, they compete and they brag amongst themselves. Check. `}

@@ -3,7 +3,7 @@
 
 @layer base
   .font_btn_1
-    @apply text-sm md:text-base md:font-[600]
+    @apply text-sm lg:text-base font-[600]
 
   .btn_1
     @apply px-5 py-2 bg-blue-400 text-white rounded-lg
@@ -17,15 +17,15 @@
       @extend .shadow-trello-1 !optional
 
   .btn_glow
-    box-shadow: -1px 5px 5px -3px rgba(0,94,255,1)
-    color: #006fff
+    box-shadow: -1px 5px 5px -3px #ff3700
+    color: #ff0044
     transition: .1s
     @extend .btn !optional
     @extend .glow_blue !optional
     @apply bg-gray-100 rounded-lg
     &:hover
-      text-shadow: 0 0 5px rgba(0, 111, 255, 0.5)
-      box-shadow: -1px 5px 5px 2px rgba(0,94,255,.3)
+      text-shadow: 0 0 5px rgba(255, 0, 81, 0.5)
+      box-shadow: -1px 5px 5px 2px #ff00484d
       transition: .1s
       @apply scale-105
 
@@ -33,12 +33,12 @@
 
   .h_3m
     @extend .h_3 !optional
-    @apply mt-28 mb-8
+    @apply mt-28 mb-[1em]
 
   .h_4m
     @extend .h_4 !optional
-    @apply mt-14 mb-2
+    @apply mt-14 mb-[1em]
 
   .pm
     @extend .p !optional
-    @apply mb-2
+    @apply my-[1em]

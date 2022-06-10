@@ -16,7 +16,7 @@ const Pt1: FC<Props> = ({ position }) => (
     </audio> */}
     <BlurW click={position}>
       <>
-        <p className="pm">
+        <p className="p">
           {`Probably the most practically important issue in exercising is how to do it consistently. And by no means is this an easy feat. To see how we could attain this elusive goal, let's not postulate as to what might or might not work, but let's instead look at an example that already works.`}
         </p>
         <p className="pm">{``}</p>
