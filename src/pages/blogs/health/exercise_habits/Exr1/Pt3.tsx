@@ -3,7 +3,8 @@ import tw from "twin.macro";
 import { BlurW, InBlur } from "../../../../../app/bones/components/Blur";
 import { Quote } from "../../../../../app/bones/components/Quote";
 import { audio } from "../../../../../static/audio/webaudio";
-import { texts } from "../Exr1.texts";
+import Consistency from "../Exr1.texts";
+import texts from "../Exr1.texts";
 
 type Props = {
   position: any;
@@ -38,7 +39,7 @@ const Pt1: FC<Props> = ({ position }) => (
         and repeat familiar exercises. Check.`}</Quote>{" "}
         </p>
       </>
-      {texts.reason1}
+      {Consistency}
     </BlurW>
 
     <h3 className="h_4m">Reason two - Low rep ranges are easier</h3>
@@ -58,7 +59,7 @@ const Pt1: FC<Props> = ({ position }) => (
           {`"Muscle builders" usually do high resistance/weight exercises, thus reaching max reps in say 5 to 20 reps. Check.`}
         </Quote>
       </>
-      {texts.reason2}
+      {Consistency}
     </BlurW>
 
     <h3 className="h_4m"> Reason three - diet</h3>
