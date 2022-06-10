@@ -41,7 +41,7 @@ const Pt1: FC<Props> = ({ position }) => (
       {texts.reason1}
     </BlurW>
 
-    <h3 className="h_4m">Reason two - High rep ranges are exhausting</h3>
+    <h3 className="h_4m">Reason two - Low rep ranges are easier</h3>
     <audio controls>
       <source src={audio.reason2} type="audio/mpeg" />
     </audio>
