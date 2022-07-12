@@ -54,12 +54,13 @@ const HeaderFixed: FC<Props> = () => {
 
   return (
     <ScrollReveal scroll={scroll}>
-      <header className="fixed bg-[#fafafa] w-full z-10 shadow_ionic min-h-[60px] flex justify-center items-center">
+      <header className="fixed bg-[#fafafa] w-full z-20 shadow_ionic min-h-[60px] flex justify-center items-center border-b-[1px] border-b-[#ff3094]">
         <div tw="py-1 px-3 flex gap-5">
           <NavLink href="/">HOME</NavLink>
-          <NavLink href="/bloglist">BLOGS</NavLink>
+          <NavLink href="/blogs">BLOGS</NavLink>
         </div>
       </header>
+      {/* <div className="fixed w-full z-10 h-4 top-[55px] bg-red-500/2 backdrop-blur-sm" /> */}
     </ScrollReveal>
   );
 };

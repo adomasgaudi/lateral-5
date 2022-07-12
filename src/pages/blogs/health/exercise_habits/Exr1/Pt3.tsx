@@ -39,6 +39,7 @@ const Pt1: FC<Props> = ({ position }) => (
         and repeat familiar exercises. Check.`}</Quote>{" "}
         </p>
       </>
+      {/* <>cons</> */}
       {Consistency}
     </BlurW>
 
@@ -59,7 +60,15 @@ const Pt1: FC<Props> = ({ position }) => (
           {`"Muscle builders" usually do high resistance/weight exercises, thus reaching max reps in say 5 to 20 reps. Check.`}
         </Quote>
       </>
-      {Consistency}
+      <>
+        <div>
+          <p className="pm">
+            Consistency can be achieved by utilizing some habit building tools.
+          </p>
+          <p className="pm">These tools minimize the discipline required.</p>
+        </div>
+      </>
+      {/* {Consistency} */}
     </BlurW>
 
     <h3 className="h_4m"> Reason three - diet</h3>

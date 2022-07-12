@@ -1,13 +1,19 @@
 import React, { FC } from "react";
-import tw from "twin.macro";
-import { BlurW, InBlur } from "../../../../../app/bones/components/Blur";
-import { audio } from "../../../../../static/audio/webaudio";
+import "twin.macro";
+import { BlurW } from "../../../../../app/bones/components/Blur";
 
-type Props = {
-  position: any;
-};
 
-const Pt1: FC<Props> = ({ position }) => (
+interface Props {
+  position: number;
+}
+
+
+const Pt1: FC<Props> = ({ position }) => {
+
+
+
+
+  return(
   <>
     <BlurW className="" click={position}>
       <>
@@ -25,6 +31,6 @@ const Pt1: FC<Props> = ({ position }) => (
       {`Taking stereotypical muscle-builders as a working real life example we can destructure quite a few good habit building tips for exercising. Namely doing simple familiar exercises, isolating large muscles, doing low rep high weight exercises, taking care of our diet and filling our social circle with competition and reinforcement.`}
     </p>
   </>
-);
+);}
 
 export default Pt1;

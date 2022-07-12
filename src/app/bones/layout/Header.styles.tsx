@@ -12,7 +12,7 @@ export const Link = ({ children, href, cls }: any) => (
 );
 
 export const NavLink = base(Link, {
-  cls: "cap_thin hover:cap_thick",
+  cls: "cap_thin hover:cap_thick ",
 });
 
 export const Logo = () => {

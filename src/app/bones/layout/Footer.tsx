@@ -3,8 +3,8 @@ import { Logo } from "./Header.styles";
 
 const Footer = () => {
   return (
-    <>
-      <div className="h-[300px] " />
+    <footer>
+      <div className="h-[100px] " />
       <div className="border h-[300px] pt-20 pb-10">
         <div className="flex items-center justify-center">
           <div className="flex flex-col justify-center items-center gap-3">
@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 

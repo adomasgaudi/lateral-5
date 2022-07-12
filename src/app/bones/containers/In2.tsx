@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "twin.macro";
 import { ContainX } from "../../../share/bones/components/Contain";
 // import { Div50 } from "../../../share/bones/components/Fifty";
@@ -16,6 +16,14 @@ type Props = {};
 const In2: FC<Props> = () => {
   console.log(random.src, "jo");
   useSquare("square");
+  const [blogNum, setBlogNum] = useState(0);
+
+  useEffect(() => {
+    setBlogNum(Math.floor(Math.random() * 10));
+  }
+  , []);
+  
+
   return (
     <>
       <ContainX.H0p3 classIn="flex flex-col gap-8 items-start mb-60 ">
@@ -30,6 +38,9 @@ const In2: FC<Props> = () => {
           adipisicing elit. Magni, quo Lorem ipsum dolor sit amet consectetur
           adipisicing elit. At, nulla.
         </p>
+        <Link href="/blogs" cls="btn_glow" >
+          See Food
+        </Link>  
       </ContainX.H0p3>
 
       <ContainX.H0p3 classIn="items-center" classOut="bg-blue-200 ">
@@ -43,7 +54,7 @@ const In2: FC<Props> = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
               nemo ut quisquam temporibus nostrum ex obcaecati distinctio{" "}
             </p>
-            <Link href="/bloglist">
+            <Link href="/blogs">
               <div className="shadowHov_thick rounded-md py-1 px-3 font_btn_1">
                 READ
               </div>

@@ -29,7 +29,7 @@ const Diet2: FC<Props> = () => {
       <HeaderFixed />
 
       <Header />
-      <FixedBtn />
+      <FixedBtn gobruh={gobruh} />
       <ContainX.Brilliant classIn="fadeInUp">
         <p
           className="p_tag hover:border-b-[#eb234e] hover:border-b z-10"

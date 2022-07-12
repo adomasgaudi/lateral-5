@@ -5,7 +5,8 @@
 }
 
 html,
-body {
+body,
+#__next {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -28,6 +29,7 @@ a {
 
 ::-webkit-scrollbar {
   width: 14px;
+  border-left: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -280,3 +282,4 @@ a {
     @apply my-[1em] {}
   }
 }
+/*# sourceMappingURL=Global.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAuBA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,mBAAmB;EAChC,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;CAAG",
+    "sources": [
+        "Local.sass",
+        "_Part.sass"
+    ],
+    "names": [],
+    "file": "Local.css"
+}

@@ -1,8 +1,10 @@
 import React, { FC, useState } from "react";
-import tw from "twin.macro";
+import "twin.macro";
 import { Link, Logo, NavLink } from "./Header.styles";
 
-type Props = {};
+type Props = {
+
+};
 
 const Header: FC<Props> = () => {
   const handleLogin = () => {};
@@ -12,15 +14,17 @@ const Header: FC<Props> = () => {
     <>
       <header className="bg-white w-full z-10 mb-20">
         <div tw="flex justify-between items-center py-1 px-3">
-          <div tw="flex items-center gap-[20%]">
+          <div tw="flex items-center">
             <Link href="/">
               <div tw="flex items-center">
                 <Logo />
                 {/* {screenWidth > 700 ? <div>LOGO</div> : null} */}
               </div>
             </Link>
-            <NavLink href="/">HOME</NavLink>
-            <NavLink href="/blogs">BLOGS</NavLink>
+            <NavLink href="/" cls="px-6" >HOME</NavLink>
+            <NavLink href="/blogs"  cls="px-6" >OVERBLOGS</NavLink>
+            <NavLink href="/myblogs"  cls="px-6" > MY BLOGS</NavLink>
+            
           </div>
           <button
             type="button"
